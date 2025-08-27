@@ -1,0 +1,2245 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook original-version='18.1' source-build='2019.4.1 (20194.19.1211.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='netflix_titles' inline='true' name='federated.094z3f11qycwwt0zoh18k001hd7s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='textscan.0wpoy95141fj1h1fyo7w302a2u8r'>
+            <connection class='textscan' directory='C:/Users/menna/Downloads' filename='netflix_titles.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0wpoy95141fj1h1fyo7w302a2u8r' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.574713' measure-ordering='alphabetic' measure-percentage='0.425287' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#d3293d'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='#fca290'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Egypt&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Date Added'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>Date Added</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[date_added]' derivation='Year' name='[yr:date_added:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;3 Idiots&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</column>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0BB35C01-B090-4374-A85C-BC8BB1E2034A}' />
+    </worksheet>
+    <worksheet name='Description'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Description</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column-instance column='[description]' derivation='None' name='[none:description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;3 Idiots&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</column>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+            <format attr='title' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' value='Type'>
+              <formatted-text>
+                <run fontcolor='#ff0000' fontsize='10'>Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' value='Title'>
+              <formatted-text>
+                <run fontcolor='#ff0000' fontsize='10'>Title</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0AF251F9-6328-47D2-B4C9-B013E4CC7ECD}' />
+    </worksheet>
+    <worksheet name='Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>Duration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[duration]' derivation='None' name='[none:duration:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;3 Idiots&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</column>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:duration:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4FB37E75-79B1-4F1A-9447-71C15ADC9AE4}' />
+    </worksheet>
+    <worksheet name='Genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Genre</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[listed_in]' derivation='None' name='[none:listed_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;3 Idiots&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</column>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{944FB310-85BF-4317-B00C-C1F27F7DE3D1}' />
+    </worksheet>
+    <worksheet name='Movies &amp; TV shows distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[pcto:ctd:show_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' />
+              <lod column='[federated.094z3f11qycwwt0zoh18k001hd7s].[pcto:ctd:show_id:qk]' />
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' />
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' />
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[pcto:ctd:show_id:qk]' />
+              <color column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F83F2471-A195-41D9-96DE-D9295A4B8B87}' />
+    </worksheet>
+    <worksheet name='Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;3 Idiots&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</column>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B54F201D-148A-401E-9458-3EF885FD98F1}' />
+    </worksheet>
+    <worksheet name='Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Ratings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]</rows>
+        <cols>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]</cols>
+      </table>
+      <simple-id uuid='{5D6438D2-1F5E-4EFE-874B-1B3A6853F495}' />
+    </worksheet>
+    <worksheet name='Release year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='10'>Release year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;3 Idiots&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</column>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:release_year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F02446EB-B63F-4133-A8B8-8D0C2E237CB1}' />
+    </worksheet>
+    <worksheet name='Top 10 genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Top 10 genre</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[listed_in]' derivation='None' name='[none:listed_in:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([show_id])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:listed_in:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]' value='288' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]</rows>
+        <cols>[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]</cols>
+      </table>
+      <simple-id uuid='{E0370776-3383-4872-B5B6-AB94EEAA07D3}' />
+    </worksheet>
+    <worksheet name='Total movies &amp; TV shows by country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Total movies &amp; TV shows by country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column aggregation='None' caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Longitude (generated)]' field-type='quantitative' max='28413122.194549412' min='-16615732.811272619' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Latitude (generated)]' field-type='quantitative' max='15263127.117930451' min='-10163615.538679928' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='omit-on-special' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:country:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:country:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:country:nk]' value='false' />
+            <format attr='omit-on-special' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Latitude (generated)]' value='false' />
+            <format attr='break-on-special' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Latitude (generated)]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Latitude (generated)]' value='false' />
+            <format attr='omit-on-special' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Longitude (generated)]' value='false' />
+            <format attr='break-on-special' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Longitude (generated)]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[Longitude (generated)]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' />
+              <lod column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:country:nk]' />
+              <geometry column='[federated.094z3f11qycwwt0zoh18k001hd7s].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.094z3f11qycwwt0zoh18k001hd7s].[Latitude (generated)]</rows>
+        <cols>[federated.094z3f11qycwwt0zoh18k001hd7s].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D58E7A60-0594-4263-9361-7FC5A086266D}' />
+    </worksheet>
+    <worksheet name='Total movies &amp; TV shows by years '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Total movies &amp; TV shows by years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[date_added]' derivation='Year' name='[yr:date_added:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date_added:ok]' to='2020' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]' value='0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' />
+              <text column='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]</rows>
+        <cols>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</cols>
+      </table>
+      <simple-id uuid='{2F69A36E-6AA0-48FE-92FE-8C45058C030A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='720' maxwidth='1360' minheight='720' minwidth='1360' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='netflix_titles' name='federated.094z3f11qycwwt0zoh18k001hd7s' />
+      </datasources>
+      <datasource-dependencies datasource='federated.094z3f11qycwwt0zoh18k001hd7s'>
+        <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97778' id='21' param='horz' type='layout-flow' w='98824' x='588' y='1111'>
+            <zone h='97778' id='19' type='layout-basic' w='98824' x='588' y='1111'>
+              <zone h='80970' id='15' param='horz' type='layout-flow' w='98824' x='588' y='17919'>
+                <zone h='80970' id='8' param='horz' type='layout-flow' w='98824' x='588' y='17919'>
+                  <zone h='80970' id='6' type='layout-basic' w='98824' x='588' y='17919'>
+                    <zone h='42256' id='3' name='Total movies &amp; TV shows by years ' w='42228' x='57184' y='56633'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='38714' id='11' name='Movies &amp; TV shows distribution' w='25559' x='73853' y='17919'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='38714' id='12' name='Ratings' w='43042' x='30811' y='17919'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='38714' id='13' name='Total movies &amp; TV shows by country' w='30223' x='588' y='17919'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='42256' id='17' name='Top 10 genre' w='56596' x='588' y='56633'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='16808' id='18' name='Description' w='32745' x='66667' y='1111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8479' id='24' name='Date Added' w='13286' x='26811' y='1111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8479' id='25' name='Duration' w='13872' x='12939' y='1111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8329' id='27' name='Release year' w='13872' x='12939' y='9590'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16808' id='28' name='Genre' w='13285' x='53382' y='1111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8331' id='22' mode='dropdown' name='Description' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' w='12351' x='588' y='9588'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8477' id='23' mode='dropdown' name='Description' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' w='12351' x='588' y='1111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8329' id='26' name='Rating' w='13286' x='26811' y='9590'>
+                <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='43' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16808' id='29' is-scaled='1' param='C:/Users/menna/Downloads/BrandAssets_Logos_01-Wordmark.jpg' type='bitmap' w='13285' x='40097' y='1111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6125' id='16' name='Total movies &amp; TV shows by country' pane-specification-id='0' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' show-title='false' type='color' w='10370' x='19333' y='52375' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2250' minheight='2250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97778' id='32' param='vert' type='layout-flow' w='98824' x='588' y='1111'>
+                <zone fixed-size='53' h='8479' id='25' is-fixed='true' name='Duration' w='13872' x='12939' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='53' h='8479' id='24' is-fixed='true' name='Date Added' w='13286' x='26811' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='16808' id='29' is-fixed='true' is-scaled='1' param='C:/Users/menna/Downloads/BrandAssets_Logos_01-Wordmark.jpg' type='bitmap' w='13285' x='40097' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='16808' id='28' is-fixed='true' name='Genre' w='13285' x='53382' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8331' id='22' mode='dropdown' name='Description' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' w='12351' x='588' y='9588'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8477' id='23' mode='dropdown' name='Description' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' w='12351' x='588' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='16808' id='18' is-fixed='true' name='Description' w='32745' x='66667' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='52' h='8329' id='27' is-fixed='true' name='Release year' w='13872' x='12939' y='9590'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='52' h='8329' id='26' is-fixed='true' name='Rating' w='13286' x='26811' y='9590'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='43' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='271' h='38714' id='13' is-fixed='true' name='Total movies &amp; TV shows by country' w='30223' x='588' y='17919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6125' id='16' name='Total movies &amp; TV shows by country' pane-specification-id='0' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' show-title='false' type='color' w='10370' x='19333' y='52375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='271' h='38714' id='12' is-fixed='true' name='Ratings' w='43042' x='30811' y='17919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='271' h='38714' id='11' is-fixed='true' name='Movies &amp; TV shows distribution' w='25559' x='73853' y='17919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42256' id='17' is-fixed='true' name='Top 10 genre' w='56596' x='588' y='56633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42256' id='3' is-fixed='true' name='Total movies &amp; TV shows by years ' w='42228' x='57184' y='56633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A8A07AA3-1A4A-448A-B12B-7806B6A4706D}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Date Added'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Description'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Duration'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Genre'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Movies &amp; TV shows distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Release year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 genre'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total movies &amp; TV shows by country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total movies &amp; TV shows by years '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='18' />
+      <simple-id uuid='{3300EF66-006D-42C6-8D6F-6DE884F7DA2E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Date Added'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{15095C10-D36D-4D48-A11F-7633B2522ADB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Description'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57CB0994-DB9E-439C-B423-3D2A6F3DD674}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:duration:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DC123E2B-BB69-4DFF-BC20-FD7036391DFA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:duration:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:release_year:qk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9572788F-4C18-4947-AE7B-EEEB2F623101}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Movies &amp; TV shows distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:show_id:ok]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{62FF3BB7-D957-43E9-9A58-5336895C8490}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:duration:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8019D327-CBA1-4BA9-BAB4-EB4C85CA84C6}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:show_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F9693EE6-EC51-4450-BC4F-D9D1AFEBBE72}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Release year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:description:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:duration:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:rating:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:release_year:qk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E4DFA136-B8FF-43C0-88E2-D1857080CF96}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10 genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:listed_in:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:show_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6873490C-5685-4846-A71B-C8A446BB2451}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total movies &amp; TV shows by country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[ctd:show_id:qk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{18120B59-F8FD-464B-8C8D-7EA0C7E6B832}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total movies &amp; TV shows by years '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:country:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:director:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:duration:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:show_id:ok]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:title:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[none:type:nk]</field>
+            <field>[federated.094z3f11qycwwt0zoh18k001hd7s].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{78C27595-2212-4012-A906-27D58F6D4E20}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      CwsLG5al0+lIpVKPJPhMr9evu13o45a1FXX6jE1/Gleqr7q6OtHtdj8SWb29vaJMJnskso4f
+      P/7IxvioZG1FnQBxdwXYADKZDFEUKRQ2Xh1UpVI9skTzrShrK+oEpbWDt+XI5/OoDFZam2o3
+      JGdf1yHq3Hb27OvEqFE8nBCJFK+3FqlCQ0tzA0qNkc79ex5KlCBTUltThcHm4vDBLszW8oce
+      Y2vnQewmHQ3NLWiVcjq7u1EIkvULkkjpPNCDyWDk4OHDOO0Wuro6HmoCm+2Va4UVzI7S2Abd
+      ypz/3p9hqqxi5u7dhwsrlmi59MIZrg/Oc6TZRl1TE4ND69+KVOqMPHe2D62tGoVGx4vnjxLM
+      aijOTbCUWd8KpTOaeebUcRyeeiLj9+g63IO+vIrQvbuk13W/oMBotXDh+SsUUiFO/fCnLM9N
+      0lxrZtg3vy6d5EotJpuTY2fOUC1PsKrzoJQrqC0r4JtbX+qmVmfieN9J9nkrd1eAjZItglGj
+      eOgS6RJpjg9u3OXCsyfRGK0Usg/uS/ZViIUCco0BuSDBbjWzuJzBZtKRLaw/Yq+Qy6PVmxm9
+      fYuOk2cpU6swaZV8ixTrLyGRqnj+uT7efOtdTGU2VpIxLI5y0qvrH6NcY+Hc8f1cff11hlMm
+      els92O1W0un1B2Qp1QqKCIiCbHcXaKPIVVrMOsU3JtV/MxLKXZWk4mGU+jKSsTCZ3PrNSaHW
+      U+m0EQmH0em1hCKL2Mv0zIUi65al0Zkot5lZXEqgVkpZiKcwPcwYBTkej5tkPIpMpSUWnsda
+      7iQcDKy7pI1UrqLKXcFSPI7eoCMYmMNmtzEXnFv3BNYazJi1CsLx5V0D2GVns3sLtMuOZtcA
+      dtnR7BrALjuaXQPYZUfz/3kXuhhzTRXCAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
